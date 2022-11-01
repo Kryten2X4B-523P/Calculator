@@ -1,0 +1,28 @@
+.calculatorGraph {
+   box-shadow: 0 2px 8px #00000029;
+   border-radius: 8px;
+
+   .wrapResults {
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+
+      .text {
+      }
+      .value {
+         color: $wine;
+      }
+      .currency {
+         color: $wine;
+      }
+
+      &:last-child {
+         font-weight: bold;
+      }
+   }
+
+   .table {
+      padding-left: 2rem;
+      padding-top: 1rem;
+   }
+}
