@@ -76,9 +76,9 @@ function CalculatorGraph(props: CalculatorGraphProps): ReactElement {
    return (
       <div className="calculatorGraph">
          <h3 className="table">Tabulka:</h3>
-         <Results text={'Investovaná částka'} value={+investedPrice.toFixed(2)} />
-         <Results text={'Obdržený úrok'} value={+yearnInterest().toFixed(2)} />
-         <Results text={'Výsledná částka'} value={+(investedPrice + yearnInterest().toFixed(2))} />
+         <Results text={'Investovaná částka'} value={+investedPrice.toFixed(0)} />
+         <Results text={'Obdržený úrok'} value={+yearnInterest().toFixed(0)} />
+         <Results text={'Výsledná částka'} value={+(investedPrice + yearnInterest()).toFixed(0)} />
 
          <CalculatorResults years={years} />
       </div>
